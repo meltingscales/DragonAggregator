@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "dragonaggregator"
+version = "0.1.0"
+description = ""
+authors = ["Henry Post <henryfbp@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+SQLAlchemy = "^2.0.30"
+alembic = "^1.13.1"
+veracode-api-py = "^0.9.47"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
