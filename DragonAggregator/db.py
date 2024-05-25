@@ -5,8 +5,8 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
 
-def get_db_engine(uri):
-    engine = create_engine(uri)
+def get_db_engine(sqlite_file_path="sqlite:///db.sqlite"):
+    engine = create_engine(sqlite_file_path)
     return engine
 
 
