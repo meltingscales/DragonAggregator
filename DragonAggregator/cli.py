@@ -2,6 +2,7 @@ import yaml
 import argparse
 
 from DragonAggregator.connector.Gitleaks import GitleaksConnector
+from DragonAggregator.connector.Sonarqube import SonarQubeConnector
 from DragonAggregator.db import Database
 
 
@@ -34,14 +35,20 @@ class CLIController:
 
     def run(self):
         if self.args.pull:
-            print("Pulling data from scanners")
+            print(f"Pulling data from {self.args.scanner}")
 
             if self.args.scanner.upper() == "GITLEAKS":
-                print("Pulling data from Gitleaks")
-
-                gc = GitleaksConnector(self.args.uri)
-                parsed = gc.pull_and_parse_data()
+                connector = GitleaksConnector(self.args.uri)
+                parsed = connector.pull_and_parse_data()
                 self.db.save_all_vulnerabilities(parsed)
+
+            if self.args.scanner.upper() == "SONARQUBE":
+                connector = SonarQubeConnector(
+                    self.args.uri,
+                    api_key=self.config['sonarqube']['api_key'])
+                parsed = connector.pull_and_parse_data()
+                self.db.save_all_vulnerabilities(parsed)
+
 
             else:
                 print("Scanner {} not supported".format(self.args.scanner))

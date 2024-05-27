@@ -1,15 +1,13 @@
 from typing import List, Dict
 
-from sqlalchemy.orm import Session
-
-from DragonAggregator.models import GenericVulnerability, SecretsVulnerability, SastVulnerability, DastVulnerability, \
-    ScaVulnerability
+from DragonAggregator.models import GenericVulnerability
 
 
 class GenericConnector:
-    def __init__(self, uri, file_based=False):
+    def __init__(self, uri, file_based=False, api_key=None):
         self.uri = uri
         self.file_based = file_based
+        self.api_key = None
 
     def pull_raw_vulnerability_data(self) -> List[Dict]:
         # Pull vulnerabilities from the generic API

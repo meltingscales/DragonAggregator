@@ -1,1 +1,4 @@
 db: sqlite:///dragonaggregator.sqlite3
+sonarqube:
+  url: http://localhost:9000
+  api_key: 1234567890abcdef
