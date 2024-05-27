@@ -1,6 +1,6 @@
 from typing import Optional
 
-from sqlalchemy import Column, Integer, String
+from sqlalchemy import Column, Integer, String, JSON, DateTime
 from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
@@ -18,24 +18,44 @@ class GenericVulnerability(Base):
 
     id = Column(Integer, primary_key=True)
 
+    scan_date = Column(DateTime)
+    """Date and time when the scan was performed."""
+
+    processed_date = Column(DateTime)
+    """Date and time when the vulnerability was processed by DragonAggregator."""
+
+    original_data = Column(JSON)
+    """Original data from the scan tool. This is useful for debugging and 
+    for storing data that does not fit in the schema."""
+
     finding_id = Column(String)
+    """Tool-specific finding ID."""
 
     title = Column(String)
+    """Title of the vulnerability."""
+
     description = Column(String)
+    """Description of the vulnerability."""
 
     severity = Column(String)
+    """Severity of the vulnerability."""
 
     application_ref = Column(String)
+    """Reference to the application that the vulnerability was found in."""
 
     file_path = Column(String)
+    """Path to the file where the vulnerability was found."""
+
     line = Column(Integer)
+    """Line number in the file where the vulnerability was found."""
 
     git_commit = Column(String)
     git_commit_author = Column(String)
     git_commit_email = Column(String)
     git_commit_date = Column(String)
-    
+
     recommendation = Column(String)
+    """Recommendation to fix the vulnerability."""
 
     scan_tool = Column(String)
     scan_type = Column(String)

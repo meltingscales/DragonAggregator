@@ -1,8 +1,10 @@
 import json
+import time
+from datetime import datetime
 from typing import Dict, List
 
 from DragonAggregator.connector.Generic import GenericConnector
-from DragonAggregator.models import SecretsVulnerability
+from DragonAggregator.models import SecretsVulnerability, GenericVulnerability
 
 
 class GitleaksConnector(GenericConnector):
@@ -23,12 +25,15 @@ class GitleaksConnector(GenericConnector):
         return data
 
     @classmethod
-    def parse_secrets_vulnerability_data(cls, raw_data: List[Dict]) -> List[SecretsVulnerability]:
+    def parse_vulnerability_data(cls, raw_data: List[Dict]) -> List[SecretsVulnerability]:
         parsed = []
 
         for raw_datum in raw_data:
             single_vuln = SecretsVulnerability(
                 id=None,
+                original_data=raw_datum,
+                scan_date=None,
+                processed_date=datetime.now(),
                 finding_id=raw_datum['Fingerprint'],
                 title=raw_datum['Description'],
                 description=raw_datum['Description'],

@@ -14,12 +14,13 @@ tool.
 poetry install
 poetry shell
 
-python -m dragonaggregator --pull  --scanner veracode  --scan_type sast
-python -m dragonaggregator --pull  --scanner veracode  --scan_type dast
-python -m dragonaggregator --pull  --scanner snyk      --scan_type sca
+python -m DragonAggregator --pull  --scanner VERACODE  --scan_type SAST
+python -m DragonAggregator --pull  --scanner VERACODE  --scan_type SAST
+python -m DragonAggregator --pull  --scanner SNYK      --scan_type SCA
+python -m DragonAggregator --pull  --scanner GITLEAKS  --scan_type SECRETS --uri ./data/sample-api/gitleaks/juiceshop.json
 # then, view db.sqlite3 with a SQLite browser
 
-python -m dragonaggregator --export --scanner all      --scan_type all   --output output_all.json
+python -m DragonAggregator --export --scanner all      --scan_type all   --output output_all.json
 # or, view output.json
 ```
 
