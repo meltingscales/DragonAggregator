@@ -29,6 +29,24 @@ class Database:
 
     def save_all_vulnerabilities(self, parsed: List[GenericVulnerability]):
         for vuln in parsed:
+
+            # Check if vulnerability already exists
+            is_vuln_already_saved = (
+                self.session.query(GenericVulnerability)
+                .filter(GenericVulnerability.finding_id == vuln.finding_id)
+                .filter(GenericVulnerability.scan_tool == vuln.scan_tool)
+                .filter(GenericVulnerability.scan_type == vuln.scan_type)
+                .first()
+            )
+
+            if is_vuln_already_saved:
+                print("skipping: Already saved: Vulnerability type {} {}, finding_id '{}'".format(
+                    vuln.scan_tool,
+                    vuln.scan_type,
+                    vuln.finding_id,
+                ))
+                continue
+
             self.session.add(vuln)
         self.session.commit()
-        print("Saved {} {} vulnerabilities".format(len(parsed), parsed[0].scan_tool))
+        print("Processed {} {} vulnerabilities".format(len(parsed), parsed[0].scan_tool))

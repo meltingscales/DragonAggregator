@@ -5,7 +5,7 @@ from sqlalchemy import select
 
 from DragonAggregator.connector.Gitleaks import GitleaksConnector
 from DragonAggregator.db import Database
-from DragonAggregator.models import GenericVulnerability
+from DragonAggregator.models import GenericVulnerability, SecretsVulnerability
 
 
 class TestGitLeaks(unittest.TestCase):
@@ -37,8 +37,8 @@ class TestGitLeaks(unittest.TestCase):
 
         db.session.commit()
 
-        result = db.session.query(GenericVulnerability).filter(
-            GenericVulnerability.finding_id == vulns[0].finding_id).all()
+        result = db.session.query(SecretsVulnerability).filter(
+            SecretsVulnerability.finding_id == vulns[0].finding_id).all()
 
         print(result)
 

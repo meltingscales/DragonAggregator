@@ -60,6 +60,28 @@ class GenericVulnerability(Base):
     scan_tool = Column(String)
     scan_type = Column(String)
 
+    def to_json(self):
+        return {
+            "id": self.id,
+            "scan_date": self.scan_date,
+            "processed_date": str(self.processed_date),
+            "original_data": str(self.original_data),
+            "finding_id": self.finding_id,
+            "title": self.title,
+            "description": self.description,
+            "severity": self.severity,
+            "application_ref": self.application_ref,
+            "file_path": self.file_path,
+            "line": self.line,
+            "git_commit": self.git_commit,
+            "git_commit_author": self.git_commit_author,
+            "git_commit_email": self.git_commit_email,
+            "git_commit_date": self.git_commit_date,
+            "recommendation": self.recommendation,
+            "scan_tool": self.scan_tool,
+            "scan_type": self.scan_type
+        }
+
 
 class SastVulnerability(GenericVulnerability):
     __mapper_args__ = {
@@ -67,6 +89,16 @@ class SastVulnerability(GenericVulnerability):
     }
     cwe_id = Column(Integer)
     code_snippet = Column(String)
+
+    def to_json(self):
+        json_data = super().to_json()
+
+        json_data.update({
+            "cwe_id": self.cwe_id,
+            "code_snippet": self.code_snippet
+        })
+
+        return json_data
 
 
 class DastVulnerability(GenericVulnerability):
@@ -78,6 +110,18 @@ class DastVulnerability(GenericVulnerability):
     parameter = Column(String)
     attack_vector = Column(String)
 
+    def to_json(self):
+        json_data = super().to_json()
+
+        json_data.update({
+            "url": self.url,
+            "http_method": self.http_method,
+            "parameter": self.parameter,
+            "attack_vector": self.attack_vector
+        })
+
+        return json_data
+
 
 class ScaVulnerability(GenericVulnerability):
     __mapper_args__ = {
@@ -88,6 +132,18 @@ class ScaVulnerability(GenericVulnerability):
     fix_version = Column(String)
     license = Column(String)
 
+    def to_json(self):
+        json_data = super().to_json()
+
+        json_data.update({
+            "package_name": self.package_name,
+            "package_version": self.package_version,
+            "fix_version": self.fix_version,
+            "license": self.license
+        })
+
+        return json_data
+
 
 class SecretsVulnerability(GenericVulnerability):
     __mapper_args__ = {
@@ -95,6 +151,16 @@ class SecretsVulnerability(GenericVulnerability):
     }
     secret_type = Column(String)
     secret_value = Column(String)
+
+    def to_json(self):
+        json_data = super().to_json()
+
+        json_data.update({
+            "secret_type": self.secret_type,
+            "secret_value": self.secret_value
+        })
+
+        return json_data
 
 
 def example():
