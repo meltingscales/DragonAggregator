@@ -6,6 +6,12 @@ an SQLite database.
 It is intended to be a standalone component, data analysis CLI tool, or used as a backend for a vulnerability management
 tool.
 
+## Workflow
+
+1. Aggregate vulnerabilities from tools
+2. Export to JSON format
+3. Create PowerBI reports, import into datalake, import into some backend, etc.
+
 ## Usage
 
 ### Running locally
