@@ -20,8 +20,7 @@ tool.
 poetry install
 poetry shell
 
-python -m DragonAggregator --pull  --scanner VERACODE  --scan_type SAST
-python -m DragonAggregator --pull  --scanner VERACODE  --scan_type SAST
+python -m DragonAggregator --pull  --scanner SONARQUBE --scan_type SAST --project_key vulnado
 python -m DragonAggregator --pull  --scanner SNYK      --scan_type SCA
 python -m DragonAggregator --pull  --scanner GITLEAKS  --scan_type SECRETS --uri ./data/sample-api/gitleaks/juiceshop.json
 # then, view db.sqlite3 with a SQLite browser

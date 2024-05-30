@@ -18,6 +18,7 @@ def get_parser():
     parser.add_argument('--scanner', type=str, help='Scanner name',
                         choices=['GITLEAKS', "VERACODE", "SONARQUBE", 'all'])
     parser.add_argument('--scan_type', type=str, help='Scan type', choices=['SECRETS', 'SAST', 'DAST', 'SCA', 'all'])
+    parser.add_argument('--project_key', type=str, help='Project key for scanning tool')
     parser.add_argument('--config', type=str, help='Config file', default='.dragonaggregator.yaml')
     parser.add_argument('--output', type=str, help='Output file')
 
@@ -48,8 +49,10 @@ class CLIController:
 
         elif self.args.scanner.upper() == "SONARQUBE":
             connector = SonarQubeConnector(
-                self.args.uri,
-                api_key=self.config['sonarqube']['api_key'])
+                uri=self.args.uri,
+                api_key=self.config['sonarqube']['api_key'],
+                project_key=self.args.project_key
+            )
             parsed = connector.pull_and_parse_data()
             self.db.save_all_vulnerabilities(parsed)
 
