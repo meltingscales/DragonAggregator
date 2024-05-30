@@ -5,7 +5,10 @@ import argparse
 
 from DragonAggregator.connector.Gitleaks import GitleaksConnector
 from DragonAggregator.connector.Sonarqube import SonarQubeConnector
+from DragonAggregator.connector.Veracode import VeracodeConnector
 from DragonAggregator.db import Database
+from DragonAggregator.enum.ScanTool import ScanTool
+from DragonAggregator.enum.ScanType import ScanType
 from DragonAggregator.models import GenericVulnerability, SastVulnerability, DastVulnerability, SecretsVulnerability, \
     ScaVulnerability
 
@@ -15,10 +18,15 @@ def get_parser():
     parser.add_argument('--pull', action='store_true', help='Pull data from scanners')
     parser.add_argument('--export', action='store_true', help='Export data from scanners')
     parser.add_argument("--uri", type=str, help="URI to pull data from if applicable")
-    parser.add_argument('--scanner', type=str, help='Scanner name',
-                        choices=['GITLEAKS', "VERACODE", "SONARQUBE", 'all'])
-    parser.add_argument('--scan_type', type=str, help='Scan type', choices=['SECRETS', 'SAST', 'DAST', 'SCA', 'all'])
-    parser.add_argument('--project_key', type=str, help='Project key for scanning tool')
+    parser.add_argument('--scanner', type=str, help='Scanner name', choices=[
+        ScanTool.GITLEAKS.value, ScanTool.VERACODE.value, ScanTool.SONARQUBE.value,
+        'all'
+    ])
+    parser.add_argument('--scan_type', type=str, help='Scan type', choices=[
+        ScanType.SECRETS.value, ScanType.SAST.value, ScanType.DAST.value, ScanType.SCA.value,
+        'all'
+    ])
+    parser.add_argument('--app_identifier', type=str, help='Application name for scanning tool')
     parser.add_argument('--config', type=str, help='Config file', default='.dragonaggregator.yaml')
     parser.add_argument('--output', type=str, help='Output file')
 
@@ -51,7 +59,16 @@ class CLIController:
             connector = SonarQubeConnector(
                 uri=self.args.uri,
                 api_key=self.config['sonarqube']['api_key'],
-                project_key=self.args.project_key
+                app_identifier=self.args.app_identifier
+            )
+            parsed = connector.pull_and_parse_data()
+            self.db.save_all_vulnerabilities(parsed)
+
+        elif self.args.scanner.upper() == "VERACODE":
+            connector = VeracodeConnector(
+                app_identifier=self.args.app_identifier,
+                mock_api=self.config['veracode']['mock_api'],
+                mock_api_json_path=self.config['veracode']['mock_api_json_path'],
             )
             parsed = connector.pull_and_parse_data()
             self.db.save_all_vulnerabilities(parsed)

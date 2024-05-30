@@ -1,0 +1,42 @@
+[
+  {
+    "issue_id": 1,
+    "scan_type": "STATIC",
+    "description": "The application is vulnerable to SQL Injection",
+    "count": 1,
+    "context_type": "APPLICATION",
+    "context_guid": "app-guid-1",
+    "violates_policy": true,
+    "finding_status": {
+      "first_found_date": "2019-01-01T00:00:00Z",
+      "status": "OPEN",
+      "resolution": "UNRESOLVED",
+      "mitigation_review_status": "NONE",
+      "new": true,
+      "resolution_status": "NONE",
+      "last_seen_date": "2019-01-01T00:00:00Z"
+    },
+    "finding_details": {
+      "severity": 4,
+      "cwe": {
+        "id": 89,
+        "name": "SQL Injection",
+        "href": "https://cwe.mitre.org/data/definitions/89.html"
+      },
+      "file_path": "src/main/java/com/example/MyController.java",
+      "file_name": "MyController.java",
+      "module": "Java files within foo.zip",
+      "relative_location": -1,
+      "finding_category": {
+        "id": 19,
+        "name": "SQL Injection",
+        "href": "https://cwe.mitre.org/data/definitions/89.html"
+      },
+      "procedure": "lambda_6",
+      "exploitability": 1,
+      "attack_vector": "!java_sql",
+      "file_line_number": 123
+    },
+    "build_id": 1234
+  }
+]

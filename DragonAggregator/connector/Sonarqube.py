@@ -3,6 +3,8 @@ from typing import Dict, List
 from DragonAggregator.connector.Generic import GenericConnector
 from sonarqube import SonarQubeClient
 
+from DragonAggregator.enum.ScanTool import ScanTool
+from DragonAggregator.enum.ScanType import ScanType
 from DragonAggregator.models import GenericVulnerability
 
 
@@ -14,16 +16,15 @@ class SonarQubeConnector(GenericConnector):
 
         super().__init__(*args, **kwargs)
 
-        self.project_key = kwargs.get('project_key')
+        self.app_identifier = kwargs.get('app_identifier')
         self.sonar_client = SonarQubeClient(self.uri, token=self.api_key)
 
     def pull_raw_vulnerability_data(self) -> Dict:
-        issues = self.sonar_client.issues.search_issues(componentKeys=self.project_key)
+        issues = self.sonar_client.issues.search_issues(componentKeys=self.app_identifier)
 
         return issues
 
-    @classmethod
-    def parse_vulnerability_data(cls, raw_data: Dict) -> List[GenericVulnerability]:
+    def parse_vulnerability_data(self, raw_data: Dict) -> List[GenericVulnerability]:
         vulns = raw_data['issues']
         parsed = []
 
@@ -34,8 +35,8 @@ class SonarQubeConnector(GenericConnector):
                 title=vuln['message'],
                 description=vuln['component'],
                 severity=vuln['severity'],
-                scan_tool='SONARQUBE',
-                scan_type='STATIC',
+                scan_tool=ScanTool.SONARQUBE.value,
+                scan_type=ScanType.SAST.value,
                 file_path=vuln['component'],
                 line=vuln['line'],
                 git_commit_author=vuln['author'],

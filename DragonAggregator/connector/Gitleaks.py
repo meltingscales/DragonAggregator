@@ -4,6 +4,8 @@ from datetime import datetime
 from typing import Dict, List
 
 from DragonAggregator.connector.Generic import GenericConnector
+from DragonAggregator.enum.ScanTool import ScanTool
+from DragonAggregator.enum.ScanType import ScanType
 from DragonAggregator.models import SecretsVulnerability, GenericVulnerability
 
 
@@ -40,8 +42,8 @@ class GitleaksConnector(GenericConnector):
                 secret_type=raw_datum['RuleID'],
                 secret_value=raw_datum['Secret'],
                 file_path=raw_datum['File'],
-                scan_tool='GITLEAKS',
-                scan_type='SECRETS',
+                scan_tool=ScanTool.GITLEAKS.value,
+                scan_type=ScanType.SECRETS.value,
                 git_commit=raw_datum['Commit'],
                 git_commit_author=raw_datum['Author'],
                 git_commit_email=raw_datum['Email'],

@@ -13,8 +13,7 @@ class GenericConnector:
         # Pull vulnerabilities from the generic API
         return []
 
-    @staticmethod
-    def parse_vulnerability_data(raw_data: List[Dict]) -> List[GenericVulnerability]:
+    def parse_vulnerability_data(self, raw_data: List[Dict]) -> List[GenericVulnerability]:
         return []
 
     def pull_and_parse_data(self) -> List[GenericVulnerability]:

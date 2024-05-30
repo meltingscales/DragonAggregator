@@ -2,3 +2,6 @@ db: sqlite:///dragonaggregator.sqlite3
 sonarqube:
   url: http://localhost:9000
   api_key: 1234567890abcdef
+veracode:
+  mock_api: true
+  mock_api_json_path: ./data/sample-api/veracode/juiceshop.json
