@@ -26,7 +26,9 @@ class TestSonarqube(unittest.TestCase):
         sqc = SonarQubeConnector(
             uri=self.config['sonarqube']['url'],
             api_key=self.config['sonarqube']['api_key'],
-            app_identifier='vulnado'
+            app_identifier='vulnado',
+            mock_api=self.config['sonarqube']['mock_api'],
+            mock_api_json_path=self.config['sonarqube']['mock_api_json_path'],
         )
 
         data = sqc.pull_raw_vulnerability_data()

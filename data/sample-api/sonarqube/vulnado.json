@@ -1,1 +1,2772 @@
-[{"key": "a523ff2a-0cb2-46ed-9afd-1edfab01b283", "rule": "java:S1874", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java", "project": "vulnado", "line": 26, "hash": "a5c75af10f725c5585d4f7bc7724fcec", "textRange": {"startLine": 26, "endLine": 26, "startOffset": 20, "endOffset": 23}, "flows": [], "status": "OPEN", "message": "Remove this use of \"URL\"; it is deprecated.", "effort": "15min", "debt": "15min", "author": "ryan@scalesec.com", "tags": ["cwe", "obsolete", "cert"], "creationDate": "2019-02-21T02:01:15+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CONVENTIONAL", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "5ecb1eae-8486-4f7f-95c7-cd31ac0a0d61", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java", "project": "vulnado", "line": 28, "hash": "b5d9af209e9c7b7235ac516755b47cba", "textRange": {"startLine": 28, "endLine": 28, "startOffset": 6, "endOffset": 16}, "flows": [], "status": "OPEN", "message": "Replace this use of System.out by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-21T02:01:15+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "c6e0779d-77be-4013-8f94-965561f7a684", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 3, "hash": "d14357735ee544aefd0f5225a10875f1", "textRange": {"startLine": 3, "endLine": 3, "startOffset": 7, "endOffset": 33}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'org.apache.catalina.Server'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "15271b23-5336-4167-8c8d-40abb3e79077", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 11, "hash": "c593aecad46106ceafa9c15494cc1a22", "textRange": {"startLine": 11, "endLine": 11, "startOffset": 20, "endOffset": 28}, "flows": [], "status": "OPEN", "message": "Make username a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "ae0199c7-e662-40f5-9db6-33d148409ca0", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 11, "hash": "c593aecad46106ceafa9c15494cc1a22", "textRange": {"startLine": 11, "endLine": 11, "startOffset": 30, "endOffset": 34}, "flows": [], "status": "OPEN", "message": "Make body a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "de65ae06-4cae-4dbe-b48a-260aefb62c08", "rule": "java:S1659", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 11, "hash": "c593aecad46106ceafa9c15494cc1a22", "textRange": {"startLine": 11, "endLine": 11, "startOffset": 20, "endOffset": 28}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "textRange": {"startLine": 11, "endLine": 11, "startOffset": 30, "endOffset": 34}, "msgFormattings": []}]}], "status": "OPEN", "message": "Declare \"username\" and all following declarations on a separate line.", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["convention", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "FORMATTED", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "fbda777b-8edf-4861-b113-dc6189740448", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 11, "hash": "c593aecad46106ceafa9c15494cc1a22", "textRange": {"startLine": 11, "endLine": 11, "startOffset": 16, "endOffset": 18}, "flows": [], "status": "OPEN", "message": "Make id a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "5ee49e10-8ff6-4c9e-a9e1-1726fc82f17a", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 12, "hash": "281ed69727d7d040990d48de1b5d292c", "textRange": {"startLine": 12, "endLine": 12, "startOffset": 19, "endOffset": 29}, "flows": [], "status": "OPEN", "message": "Make created_on a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "dac3947c-7e83-40cc-bb97-130e66cf67ca", "rule": "java:S116", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 12, "hash": "281ed69727d7d040990d48de1b5d292c", "textRange": {"startLine": 12, "endLine": 12, "startOffset": 19, "endOffset": 29}, "flows": [], "status": "OPEN", "message": "Rename this field \"created_on\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["convention"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "IDENTIFIABLE", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "0c372762-81e9-4944-abf6-fff872cfaa57", "rule": "java:S117", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 14, "hash": "3c52b9ee5d4d0b576c0a26ff52009d17", "textRange": {"startLine": 14, "endLine": 14, "startOffset": 68, "endOffset": 78}, "flows": [], "status": "OPEN", "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["convention"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "IDENTIFIABLE", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "4bc2a82d-3991-4f36-87c3-b5d37d8b6852", "rule": "java:S5411", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 26, "hash": "ba64cf7239a1351d7e1d7d88aa2c8e43", "textRange": {"startLine": 26, "endLine": 26, "startOffset": 10, "endOffset": 26}, "flows": [], "status": "OPEN", "message": "Use a primitive boolean expression here.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["pitfall"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "8f60a686-4b8c-44b5-a40f-ccaee7cac45a", "rule": "java:S100", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 36, "hash": "8e259fb782a3464697bbcfc0d2c05bcf", "textRange": {"startLine": 36, "endLine": 36, "startOffset": 30, "endOffset": 39}, "flows": [], "status": "OPEN", "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["convention"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "IDENTIFIABLE", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "48f59327-1144-4817-9380-7d0d743324a2", "rule": "java:S3740", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 38, "hash": "c4cc40ba7f24c290a4d5646dbf383def", "textRange": {"startLine": 38, "endLine": 38, "startOffset": 33, "endOffset": 42}, "flows": [], "status": "OPEN", "message": "Provide the parametrized type for this generic.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["pitfall"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "cb7e1504-07f0-4f6b-8106-04ac48def1b2", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 41, "hash": "0f32df575fcb57f84addecea2f417f40", "textRange": {"startLine": 41, "endLine": 41, "startOffset": 13, "endOffset": 34}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "b233be4d-2147-4083-b80d-a1985bdd03d8", "rule": "java:S6905", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 43, "hash": "86cf5abf6b0c4fbd7f7a34d7e5c31f17", "textRange": {"startLine": 43, "endLine": 43, "startOffset": 21, "endOffset": 46}, "flows": [], "status": "OPEN", "message": "Don't use the query \"SELECT *\".", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["sustainability", "sql"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "EFFICIENT", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "b0452f9e-84b5-4517-8dbd-99a65995711f", "rule": "java:S117", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 49, "hash": "946e9ed0e42c81990fdd73a2d2d09f49", "textRange": {"startLine": 49, "endLine": 49, "startOffset": 18, "endOffset": 28}, "flows": [], "status": "OPEN", "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["convention"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "IDENTIFIABLE", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "7ea12ba3-3dbc-4456-ae1e-1f668a6cbd5f", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 56, "hash": "b22535c448ceb223a4b4505defd6d498", "textRange": {"startLine": 56, "endLine": 56, "startOffset": 6, "endOffset": 16}, "flows": [], "status": "OPEN", "message": "Replace this use of System.err by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "7215c260-1b94-475f-9d77-bcbb2b778c37", "rule": "java:S1143", "severity": "CRITICAL", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 58, "hash": "34deb56f55d0634850321cc07fb24881", "textRange": {"startLine": 58, "endLine": 58, "startOffset": 6, "endOffset": 12}, "flows": [], "status": "OPEN", "message": "Remove this return statement from this finally block.", "effort": "30min", "debt": "30min", "author": "ryan@scalesec.com", "tags": ["cwe", "error-handling", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "LOGICAL", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "9736faf5-b0b5-475d-afbb-361cfe08bae6", "rule": "java:S3516", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 62, "hash": "b3e78982f7e79d873cb7b5a900c56963", "textRange": {"startLine": 62, "endLine": 62, "startOffset": 24, "endOffset": 30}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "textRange": {"startLine": 72, "endLine": 72, "startOffset": 6, "endOffset": 19}, "msg": "Returned value.", "msgFormattings": []}, {"component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "textRange": {"startLine": 68, "endLine": 68, "startOffset": 6, "endOffset": 45}, "msg": "Returned value.", "msgFormattings": []}]}], "status": "OPEN", "message": "Refactor this method to not always return the same value.", "effort": "4min", "debt": "4min", "author": "ryan@scalesec.com", "tags": ["symbolic-execution"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "LOGICAL", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "c592475e-24b4-4775-9d95-3f3f68be2f48", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 66, "hash": "3209f268db03765ae1a8b6e89bac703d", "textRange": {"startLine": 66, "endLine": 66, "startOffset": 37, "endOffset": 62}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "3416049f-d472-4721-a124-122130976b5c", "rule": "java:S1143", "severity": "CRITICAL", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 72, "hash": "d1fe4dae1118fe43410f233c92f0438e", "textRange": {"startLine": 72, "endLine": 72, "startOffset": 6, "endOffset": 12}, "flows": [], "status": "OPEN", "message": "Remove this return statement from this finally block.", "effort": "30min", "debt": "30min", "author": "ryan@scalesec.com", "tags": ["cwe", "error-handling", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "LOGICAL", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "60570b86-6085-4bbd-b955-55c6cc4ee21c", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java", "project": "vulnado", "line": 79, "hash": "3209f268db03765ae1a8b6e89bac703d", "textRange": {"startLine": 79, "endLine": 79, "startOffset": 35, "endOffset": 60}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "34435d17-f2f0-4c1d-b88c-1a649b534b98", "rule": "java:S4488", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "project": "vulnado", "line": 17, "hash": "f8a84fd83e76899e7b20cafd1fa49672", "textRange": {"startLine": 17, "endLine": 17, "startOffset": 3, "endOffset": 17}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "textRange": {"startLine": 17, "endLine": 17, "startOffset": 48, "endOffset": 65}, "msgFormattings": []}]}], "status": "OPEN", "message": "Replace \"@RequestMapping(method = RequestMethod.GET)\" with \"@GetMapping\"", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["spring"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "e92fe2f8-d981-4da4-a055-1737f3b8e20d", "rule": "java:S4488", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "project": "vulnado", "line": 24, "hash": "018ee0dcd002821797feca62a42c2f18", "textRange": {"startLine": 24, "endLine": 24, "startOffset": 3, "endOffset": 17}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "textRange": {"startLine": 24, "endLine": 24, "startOffset": 48, "endOffset": 66}, "msgFormattings": []}]}], "status": "OPEN", "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["spring"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "4017cd8a-d1be-4f38-bb3f-8ef8ff07d498", "rule": "java:S4488", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "project": "vulnado", "line": 30, "hash": "731138ea5e39a2bba577de3ebf35643e", "textRange": {"startLine": 30, "endLine": 30, "startOffset": 3, "endOffset": 17}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "textRange": {"startLine": 30, "endLine": 30, "startOffset": 53, "endOffset": 73}, "msgFormattings": []}]}], "status": "OPEN", "message": "Replace \"@RequestMapping(method = RequestMethod.DELETE)\" with \"@DeleteMapping\"", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["spring"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "d0059a6a-5a44-44b5-88da-1ac45770eb3d", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "project": "vulnado", "line": 37, "hash": "d84a5868cc1cab603831f3757b936e18", "textRange": {"startLine": 37, "endLine": 37, "startOffset": 16, "endOffset": 24}, "flows": [], "status": "OPEN", "message": "Make username a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "18c2b734-1d4b-41a7-a954-c500106df506", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java", "project": "vulnado", "line": 38, "hash": "31b161a472de9d8ff6e608024f66aa02", "textRange": {"startLine": 38, "endLine": 38, "startOffset": 16, "endOffset": 20}, "flows": [], "status": "OPEN", "message": "Make body a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "8630e290-61ae-417a-bb7a-c28195c32175", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "project": "vulnado", "line": 7, "hash": "e4815d9609df6d4b19bc6028490e0cd7", "textRange": {"startLine": 7, "endLine": 7, "startOffset": 7, "endOffset": 39}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'org.springframework.stereotype'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "df172be3-5187-419f-99db-cc81fbd6da0c", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "project": "vulnado", "line": 35, "hash": "d6fc53c258c79b37e88e2d4be7c9cba6", "textRange": {"startLine": 35, "endLine": 35, "startOffset": 16, "endOffset": 21}, "flows": [], "status": "OPEN", "message": "Make token a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "fe132c6f-6617-445c-a4d2-46fe916b5b6e", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 94, "hash": "e5a5e27140917d6964b8cfdd9d9e1e0e", "textRange": {"startLine": 94, "endLine": 94, "startOffset": 23, "endOffset": 57}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "ac8915c3-9f17-4046-827c-a42f454a908b", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 108, "hash": "e5a5e27140917d6964b8cfdd9d9e1e0e", "textRange": {"startLine": 108, "endLine": 108, "startOffset": 25, "endOffset": 59}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "c894f4c1-a856-4c4f-b027-0d72ef50140f", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 7, "hash": "7b0e09e5c1b8e27ba5c2bbc5ed968c58", "textRange": {"startLine": 7, "endLine": 7, "startOffset": 7, "endOffset": 32}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'io.jsonwebtoken.JwtParser'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "c07bef66-e12b-4e31-ab1b-1cd56ca78dc2", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 8, "hash": "369e052a3d12475e77436eea1122afd4", "textRange": {"startLine": 8, "endLine": 8, "startOffset": 7, "endOffset": 41}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'io.jsonwebtoken.SignatureAlgorithm'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "801f40b0-2458-47ee-8f70-67ccf6cf92c0", "rule": "java:S1488", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 23, "hash": "812cff4dec524839e34d2d61eaee1d55", "textRange": {"startLine": 23, "endLine": 23, "startOffset": 17, "endOffset": 81}, "flows": [], "status": "OPEN", "message": "Immediately return this expression instead of assigning it to the temporary variable \"jws\".", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["clumsy"], "creationDate": "2019-02-21T00:55:43+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "a3c0e4f7-c6ab-42a7-9705-863476cda40f", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/CowController.java", "project": "vulnado", "line": 6, "hash": "bc6e7fc8628206cf34ff0c11cd830df7", "textRange": {"startLine": 6, "endLine": 6, "startOffset": 7, "endOffset": 27}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'java.io.Serializable'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-15T23:35:10+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "71ddc67b-401c-4390-ba60-eb513db9abf7", "rule": "java:S1118", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Cowsay.java", "project": "vulnado", "line": 6, "hash": "5233d6204d813eb8945cc52707f96689", "textRange": {"startLine": 6, "endLine": 6, "startOffset": 13, "endOffset": 19}, "flows": [], "status": "OPEN", "message": "Add a private constructor to hide the implicit public one.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["design"], "creationDate": "2019-02-15T23:35:10+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "b2f48ec2-9672-4185-8bec-9e55857a125f", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Cowsay.java", "project": "vulnado", "line": 10, "hash": "4573582866eb0889903f4b1f6780113f", "textRange": {"startLine": 10, "endLine": 10, "startOffset": 4, "endOffset": 14}, "flows": [], "status": "OPEN", "message": "Replace this use of System.out by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-15T23:35:10+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "cac0288c-6bc6-4ab0-b773-015f11252b82", "rule": "java:S1118", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java", "project": "vulnado", "line": 13, "hash": "3f3c5eb1991542c6d4b288085b2aee0d", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 13, "endOffset": 23}, "flows": [], "status": "OPEN", "message": "Add a private constructor to hide the implicit public one.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["design"], "creationDate": "2019-02-15T00:39:37+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "15aa5046-52a2-4ce5-b29b-d41fdc2dbd78", "rule": "java:S2293", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java", "project": "vulnado", "line": 15, "hash": "6b0a5779851270238c3c75c2075841fb", "textRange": {"startLine": 15, "endLine": 15, "startOffset": 39, "endOffset": 47}, "flows": [], "status": "OPEN", "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["clumsy"], "creationDate": "2019-02-15T00:39:37+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "773ccb90-c079-42da-8df8-fb4b7048e5a5", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinksController.java", "project": "vulnado", "line": 3, "hash": "b90cb27df285344b69c3010b093c31a7", "textRange": {"startLine": 3, "endLine": 3, "startOffset": 7, "endOffset": 33}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'org.springframework.boot'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-15T00:39:37+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "3e75fba3-d2fd-4f2e-8d20-1aedc44507e4", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinksController.java", "project": "vulnado", "line": 4, "hash": "fc75c65da35d181b54552c1d6ac5a107", "textRange": {"startLine": 4, "endLine": 4, "startOffset": 7, "endOffset": 42}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'org.springframework.http.HttpStatus'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-15T00:39:37+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "2b9b4449-1255-4d11-acd1-235ed773c95b", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LinksController.java", "project": "vulnado", "line": 8, "hash": "bc6e7fc8628206cf34ff0c11cd830df7", "textRange": {"startLine": 8, "endLine": 8, "startOffset": 7, "endOffset": 27}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'java.io.Serializable'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-15T00:39:37+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "4f1b2bf9-bee3-40ee-87a6-074e71a132f7", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 33, "hash": "215368da46868810dda50d0846952a98", "textRange": {"startLine": 33, "endLine": 33, "startOffset": 12, "endOffset": 22}, "flows": [], "status": "OPEN", "message": "Replace this use of System.out by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-14T22:39:25+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "79f0c6f5-07bf-4342-891f-0f2bd04c9d03", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 35, "hash": "83b89583dad76d7534ab998c9c2e6829", "textRange": {"startLine": 35, "endLine": 35, "startOffset": 29, "endOffset": 48}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-14T22:39:25+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "96ba1920-0cea-4539-ad8e-6cad976f7770", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 56, "hash": "5ea703a73a66847440ae47795de6b1e3", "textRange": {"startLine": 56, "endLine": 56, "startOffset": 12, "endOffset": 22}, "flows": [], "status": "OPEN", "message": "Replace this use of System.out by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-14T22:39:25+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "f2aac770-2814-4e14-a69c-37032dfad98f", "rule": "java:S1128", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "project": "vulnado", "line": 3, "hash": "b90cb27df285344b69c3010b093c31a7", "textRange": {"startLine": 3, "endLine": 3, "startOffset": 7, "endOffset": 33}, "flows": [], "status": "OPEN", "message": "Remove this unused import 'org.springframework.boot'.", "effort": "1min", "debt": "1min", "author": "ryan@scalesec.com", "tags": ["unused"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "aad1dd7d-ed8c-4023-8eeb-7350c35068a8", "rule": "java:S4488", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "project": "vulnado", "line": 18, "hash": "02f51b1844d0d4a2d9a7fc2508f09b65", "textRange": {"startLine": 18, "endLine": 18, "startOffset": 3, "endOffset": 17}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "textRange": {"startLine": 18, "endLine": 18, "startOffset": 45, "endOffset": 63}, "msgFormattings": []}]}], "status": "OPEN", "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["spring"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "8e57f160-68d6-46e6-874a-817a2d559a8f", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "project": "vulnado", "line": 30, "hash": "d84a5868cc1cab603831f3757b936e18", "textRange": {"startLine": 30, "endLine": 30, "startOffset": 16, "endOffset": 24}, "flows": [], "status": "OPEN", "message": "Make username a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "0e08cbec-51a9-4727-98c6-ccb2a37a089a", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java", "project": "vulnado", "line": 31, "hash": "0446fa69f560c33bcb5f21bc6dcfb254", "textRange": {"startLine": 31, "endLine": 31, "startOffset": 16, "endOffset": 24}, "flows": [], "status": "OPEN", "message": "Make password a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "87a63f16-c18d-4c22-b46a-43aeefd816a5", "rule": "java:S1118", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 12, "hash": "4a02b72cfb5b109794d71d02aa14ab07", "textRange": {"startLine": 12, "endLine": 12, "startOffset": 13, "endOffset": 21}, "flows": [], "status": "OPEN", "message": "Add a private constructor to hide the implicit public one.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["design"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "98040e8e-024e-45f0-8481-ba3c282fe5fd", "rule": "java:S4925", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 16, "hash": "d2d74b4018984cfde4c53a8785d32c9e", "textRange": {"startLine": 16, "endLine": 16, "startOffset": 18, "endOffset": 25}, "flows": [], "status": "OPEN", "message": "Remove this \"Class.forName()\", it is useless.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["obsolete"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "CLEAR", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "71689ff8-1663-4837-9670-28167ee9c20a", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 26, "hash": "b22535c448ceb223a4b4505defd6d498", "textRange": {"startLine": 26, "endLine": 26, "startOffset": 12, "endOffset": 22}, "flows": [], "status": "OPEN", "message": "Replace this use of System.err by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "83ee332c-4482-4b41-a1db-243e4bbedf00", "rule": "java:S1643", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 79, "hash": "7215479ca5f50b9fba140545693e5600", "textRange": {"startLine": 79, "endLine": 79, "startOffset": 16, "endOffset": 24}, "flows": [], "status": "OPEN", "message": "Use a StringBuilder instead.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["performance"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "EFFICIENT", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "32ee277f-dbef-4923-b05d-d25566303527", "rule": "java:S112", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java", "project": "vulnado", "line": 86, "hash": "fdda924e16c6c8cb6afc035461946766", "textRange": {"startLine": 86, "endLine": 86, "startOffset": 22, "endOffset": 38}, "flows": [], "status": "OPEN", "message": "Define and throw a dedicated exception instead of using a generic one.", "effort": "20min", "debt": "20min", "author": "ryan@scalesec.com", "tags": ["cwe", "error-handling", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "0a9b50cd-b799-420c-8492-d84f89241528", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 13, "hash": "8b574ef608304415fe3c56dd8fbaf955", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 30, "endOffset": 44}, "flows": [], "status": "OPEN", "message": "Make hashedPassword a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "65aab2b7-f9da-4c18-8aae-e893cf5e642e", "rule": "java:S1659", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 13, "hash": "8b574ef608304415fe3c56dd8fbaf955", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 20, "endOffset": 28}, "flows": [{"locations": [{"component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 30, "endOffset": 44}, "msgFormattings": []}]}], "status": "OPEN", "message": "Declare \"username\" and all following declarations on a separate line.", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["convention", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": true, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "FORMATTED", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "6f86d878-9295-4167-b4dd-eacefbf557e7", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 13, "hash": "8b574ef608304415fe3c56dd8fbaf955", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 20, "endOffset": 28}, "flows": [], "status": "OPEN", "message": "Make username a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "b5eb850f-90c3-4fc7-b41a-2579e9bf60ee", "rule": "java:S1104", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 13, "hash": "8b574ef608304415fe3c56dd8fbaf955", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 16, "endOffset": 18}, "flows": [], "status": "OPEN", "message": "Make id a static final constant or non-public and provide accessors if needed.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["cwe"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "a4c7b74f-35ab-4be8-808d-e0351b788472", "rule": "java:S2095", "severity": "BLOCKER", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 44, "hash": "0f32df575fcb57f84addecea2f417f40", "textRange": {"startLine": 44, "endLine": 44, "startOffset": 13, "endOffset": 34}, "flows": [], "status": "OPEN", "message": "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.", "effort": "5min", "debt": "5min", "author": "ryan@scalesec.com", "tags": ["cwe", "symbolic-execution", "leak", "denial-of-service", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "COMPLETE", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "55b143a0-04d4-4754-8229-cca82e7041d1", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 45, "hash": "c26c2025455e6afef408d38f1d6a682a", "textRange": {"startLine": 45, "endLine": 45, "startOffset": 6, "endOffset": 16}, "flows": [], "status": "OPEN", "message": "Replace this use of System.out by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "3107a804-bb74-4340-a6e4-d0f8820d87f4", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 48, "hash": "6d07b05a03cca0b3f35cb75e0932c762", "textRange": {"startLine": 48, "endLine": 48, "startOffset": 6, "endOffset": 16}, "flows": [], "status": "OPEN", "message": "Replace this use of System.out by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "59f7c7ef-2fbd-41a4-97ef-4946901fc005", "rule": "java:S117", "severity": "MINOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 51, "hash": "898d58846296a6b62bf24fb8d53790ba", "textRange": {"startLine": 51, "endLine": 51, "startOffset": 15, "endOffset": 22}, "flows": [], "status": "OPEN", "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.", "effort": "2min", "debt": "2min", "author": "ryan@scalesec.com", "tags": ["convention"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "IDENTIFIABLE", "cleanCodeAttributeCategory": "CONSISTENT", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "LOW"}], "issueStatus": "OPEN"}, {"key": "a6a29d10-4e91-45dc-82a0-cd638c1b3758", "rule": "java:S106", "severity": "MAJOR", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 59, "hash": "b22535c448ceb223a4b4505defd6d498", "textRange": {"startLine": 59, "endLine": 59, "startOffset": 6, "endOffset": 16}, "flows": [], "status": "OPEN", "message": "Replace this use of System.err by a logger.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["bad-practice", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "MODULAR", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "MEDIUM"}], "issueStatus": "OPEN"}, {"key": "de327e87-aba9-45d0-b5ff-d36cf7bba300", "rule": "java:S1143", "severity": "CRITICAL", "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java", "project": "vulnado", "line": 61, "hash": "1aba5703084f105a1cf02655aede82c9", "textRange": {"startLine": 61, "endLine": 61, "startOffset": 6, "endOffset": 12}, "flows": [], "status": "OPEN", "message": "Remove this return statement from this finally block.", "effort": "30min", "debt": "30min", "author": "ryan@scalesec.com", "tags": ["cwe", "error-handling", "cert"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "BUG", "scope": "MAIN", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "LOGICAL", "cleanCodeAttributeCategory": "INTENTIONAL", "impacts": [{"softwareQuality": "RELIABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}, {"key": "cf49e85f-9d30-4b07-8fa3-45f894231e8e", "rule": "java:S2699", "severity": "BLOCKER", "component": "vulnado:src/test/java/com/scalesec/vulnado/VulnadoApplicationTests.java", "project": "vulnado", "line": 13, "hash": "4f3a6b567cda13dd6baeb45860ba2010", "textRange": {"startLine": 13, "endLine": 13, "startOffset": 13, "endOffset": 25}, "flows": [], "status": "OPEN", "message": "Add at least one assertion to this test case.", "effort": "10min", "debt": "10min", "author": "ryan@scalesec.com", "tags": ["junit", "tests"], "creationDate": "2019-02-13T01:41:17+0000", "updateDate": "2024-05-30T15:47:47+0000", "type": "CODE_SMELL", "scope": "TEST", "quickFixAvailable": false, "messageFormattings": [], "codeVariants": [], "cleanCodeAttribute": "TESTED", "cleanCodeAttributeCategory": "ADAPTABLE", "impacts": [{"softwareQuality": "MAINTAINABILITY", "severity": "HIGH"}], "issueStatus": "OPEN"}]
+{
+  "issues": [
+    {
+      "key": "a523ff2a-0cb2-46ed-9afd-1edfab01b283",
+      "rule": "java:S1874",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java",
+      "project": "vulnado",
+      "line": 26,
+      "hash": "a5c75af10f725c5585d4f7bc7724fcec",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 20,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this use of \"URL\"; it is deprecated.",
+      "effort": "15min",
+      "debt": "15min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "obsolete",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T02:01:15+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CONVENTIONAL",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "5ecb1eae-8486-4f7f-95c7-cd31ac0a0d61",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java",
+      "project": "vulnado",
+      "line": 28,
+      "hash": "b5d9af209e9c7b7235ac516755b47cba",
+      "textRange": {
+        "startLine": 28,
+        "endLine": 28,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T02:01:15+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "c6e0779d-77be-4013-8f94-965561f7a684",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 3,
+      "hash": "d14357735ee544aefd0f5225a10875f1",
+      "textRange": {
+        "startLine": 3,
+        "endLine": 3,
+        "startOffset": 7,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'org.apache.catalina.Server'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "15271b23-5336-4167-8c8d-40abb3e79077",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 11,
+      "hash": "c593aecad46106ceafa9c15494cc1a22",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 20,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make username a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "ae0199c7-e662-40f5-9db6-33d148409ca0",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 11,
+      "hash": "c593aecad46106ceafa9c15494cc1a22",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 30,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make body a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "de65ae06-4cae-4dbe-b48a-260aefb62c08",
+      "rule": "java:S1659",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 11,
+      "hash": "c593aecad46106ceafa9c15494cc1a22",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 20,
+        "endOffset": 28
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+              "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 30,
+                "endOffset": 34
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Declare \"username\" and all following declarations on a separate line.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "FORMATTED",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "fbda777b-8edf-4861-b113-dc6189740448",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 11,
+      "hash": "c593aecad46106ceafa9c15494cc1a22",
+      "textRange": {
+        "startLine": 11,
+        "endLine": 11,
+        "startOffset": 16,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make id a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "5ee49e10-8ff6-4c9e-a9e1-1726fc82f17a",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 12,
+      "hash": "281ed69727d7d040990d48de1b5d292c",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 19,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make created_on a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "dac3947c-7e83-40cc-bb97-130e66cf67ca",
+      "rule": "java:S116",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 12,
+      "hash": "281ed69727d7d040990d48de1b5d292c",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 19,
+        "endOffset": 29
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this field \"created_on\" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "IDENTIFIABLE",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "0c372762-81e9-4944-abf6-fff872cfaa57",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 14,
+      "hash": "3c52b9ee5d4d0b576c0a26ff52009d17",
+      "textRange": {
+        "startLine": 14,
+        "endLine": 14,
+        "startOffset": 68,
+        "endOffset": 78
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "IDENTIFIABLE",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "4bc2a82d-3991-4f36-87c3-b5d37d8b6852",
+      "rule": "java:S5411",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 26,
+      "hash": "ba64cf7239a1351d7e1d7d88aa2c8e43",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 10,
+        "endOffset": 26
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use a primitive boolean expression here.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "8f60a686-4b8c-44b5-a40f-ccaee7cac45a",
+      "rule": "java:S100",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 36,
+      "hash": "8e259fb782a3464697bbcfc0d2c05bcf",
+      "textRange": {
+        "startLine": 36,
+        "endLine": 36,
+        "startOffset": 30,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "IDENTIFIABLE",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "48f59327-1144-4817-9380-7d0d743324a2",
+      "rule": "java:S3740",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 38,
+      "hash": "c4cc40ba7f24c290a4d5646dbf383def",
+      "textRange": {
+        "startLine": 38,
+        "endLine": 38,
+        "startOffset": 33,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Provide the parametrized type for this generic.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "pitfall"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "cb7e1504-07f0-4f6b-8106-04ac48def1b2",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 41,
+      "hash": "0f32df575fcb57f84addecea2f417f40",
+      "textRange": {
+        "startLine": 41,
+        "endLine": 41,
+        "startOffset": 13,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "b233be4d-2147-4083-b80d-a1985bdd03d8",
+      "rule": "java:S6905",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 43,
+      "hash": "86cf5abf6b0c4fbd7f7a34d7e5c31f17",
+      "textRange": {
+        "startLine": 43,
+        "endLine": 43,
+        "startOffset": 21,
+        "endOffset": 46
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Don't use the query \"SELECT *\".",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "sustainability",
+        "sql"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "EFFICIENT",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "b0452f9e-84b5-4517-8dbd-99a65995711f",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 49,
+      "hash": "946e9ed0e42c81990fdd73a2d2d09f49",
+      "textRange": {
+        "startLine": 49,
+        "endLine": 49,
+        "startOffset": 18,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "IDENTIFIABLE",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "7ea12ba3-3dbc-4456-ae1e-1f668a6cbd5f",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 56,
+      "hash": "b22535c448ceb223a4b4505defd6d498",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 56,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.err by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "7215c260-1b94-475f-9d77-bcbb2b778c37",
+      "rule": "java:S1143",
+      "severity": "CRITICAL",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 58,
+      "hash": "34deb56f55d0634850321cc07fb24881",
+      "textRange": {
+        "startLine": 58,
+        "endLine": 58,
+        "startOffset": 6,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this return statement from this finally block.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "error-handling",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "9736faf5-b0b5-475d-afbb-361cfe08bae6",
+      "rule": "java:S3516",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 62,
+      "hash": "b3e78982f7e79d873cb7b5a900c56963",
+      "textRange": {
+        "startLine": 62,
+        "endLine": 62,
+        "startOffset": 24,
+        "endOffset": 30
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+              "textRange": {
+                "startLine": 72,
+                "endLine": 72,
+                "startOffset": 6,
+                "endOffset": 19
+              },
+              "msg": "Returned value.",
+              "msgFormattings": []
+            },
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+              "textRange": {
+                "startLine": 68,
+                "endLine": 68,
+                "startOffset": 6,
+                "endOffset": 45
+              },
+              "msg": "Returned value.",
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Refactor this method to not always return the same value.",
+      "effort": "4min",
+      "debt": "4min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "symbolic-execution"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "c592475e-24b4-4775-9d95-3f3f68be2f48",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 66,
+      "hash": "3209f268db03765ae1a8b6e89bac703d",
+      "textRange": {
+        "startLine": 66,
+        "endLine": 66,
+        "startOffset": 37,
+        "endOffset": 62
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "3416049f-d472-4721-a124-122130976b5c",
+      "rule": "java:S1143",
+      "severity": "CRITICAL",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 72,
+      "hash": "d1fe4dae1118fe43410f233c92f0438e",
+      "textRange": {
+        "startLine": 72,
+        "endLine": 72,
+        "startOffset": 6,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this return statement from this finally block.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "error-handling",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "60570b86-6085-4bbd-b955-55c6cc4ee21c",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Comment.java",
+      "project": "vulnado",
+      "line": 79,
+      "hash": "3209f268db03765ae1a8b6e89bac703d",
+      "textRange": {
+        "startLine": 79,
+        "endLine": 79,
+        "startOffset": 35,
+        "endOffset": 60
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "34435d17-f2f0-4c1d-b88c-1a649b534b98",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+      "project": "vulnado",
+      "line": 17,
+      "hash": "f8a84fd83e76899e7b20cafd1fa49672",
+      "textRange": {
+        "startLine": 17,
+        "endLine": 17,
+        "startOffset": 3,
+        "endOffset": 17
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+              "textRange": {
+                "startLine": 17,
+                "endLine": 17,
+                "startOffset": 48,
+                "endOffset": 65
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.GET)\" with \"@GetMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "spring"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "e92fe2f8-d981-4da4-a055-1737f3b8e20d",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+      "project": "vulnado",
+      "line": 24,
+      "hash": "018ee0dcd002821797feca62a42c2f18",
+      "textRange": {
+        "startLine": 24,
+        "endLine": 24,
+        "startOffset": 3,
+        "endOffset": 17
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+              "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 48,
+                "endOffset": 66
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "spring"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "4017cd8a-d1be-4f38-bb3f-8ef8ff07d498",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+      "project": "vulnado",
+      "line": 30,
+      "hash": "731138ea5e39a2bba577de3ebf35643e",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 3,
+        "endOffset": 17
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+              "textRange": {
+                "startLine": 30,
+                "endLine": 30,
+                "startOffset": 53,
+                "endOffset": 73
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.DELETE)\" with \"@DeleteMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "spring"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "d0059a6a-5a44-44b5-88da-1ac45770eb3d",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+      "project": "vulnado",
+      "line": 37,
+      "hash": "d84a5868cc1cab603831f3757b936e18",
+      "textRange": {
+        "startLine": 37,
+        "endLine": 37,
+        "startOffset": 16,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make username a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "18c2b734-1d4b-41a7-a954-c500106df506",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/CommentsController.java",
+      "project": "vulnado",
+      "line": 38,
+      "hash": "31b161a472de9d8ff6e608024f66aa02",
+      "textRange": {
+        "startLine": 38,
+        "endLine": 38,
+        "startOffset": 16,
+        "endOffset": 20
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make body a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "8630e290-61ae-417a-bb7a-c28195c32175",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+      "project": "vulnado",
+      "line": 7,
+      "hash": "e4815d9609df6d4b19bc6028490e0cd7",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 7,
+        "endOffset": 39
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'org.springframework.stereotype'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "df172be3-5187-419f-99db-cc81fbd6da0c",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+      "project": "vulnado",
+      "line": 35,
+      "hash": "d6fc53c258c79b37e88e2d4be7c9cba6",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35,
+        "startOffset": 16,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make token a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "fe132c6f-6617-445c-a4d2-46fe916b5b6e",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 94,
+      "hash": "e5a5e27140917d6964b8cfdd9d9e1e0e",
+      "textRange": {
+        "startLine": 94,
+        "endLine": 94,
+        "startOffset": 23,
+        "endOffset": 57
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "ac8915c3-9f17-4046-827c-a42f454a908b",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 108,
+      "hash": "e5a5e27140917d6964b8cfdd9d9e1e0e",
+      "textRange": {
+        "startLine": 108,
+        "endLine": 108,
+        "startOffset": 25,
+        "endOffset": 59
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"PreparedStatement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "c894f4c1-a856-4c4f-b027-0d72ef50140f",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 7,
+      "hash": "7b0e09e5c1b8e27ba5c2bbc5ed968c58",
+      "textRange": {
+        "startLine": 7,
+        "endLine": 7,
+        "startOffset": 7,
+        "endOffset": 32
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'io.jsonwebtoken.JwtParser'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "c07bef66-e12b-4e31-ab1b-1cd56ca78dc2",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 8,
+      "hash": "369e052a3d12475e77436eea1122afd4",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 7,
+        "endOffset": 41
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'io.jsonwebtoken.SignatureAlgorithm'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "801f40b0-2458-47ee-8f70-67ccf6cf92c0",
+      "rule": "java:S1488",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 23,
+      "hash": "812cff4dec524839e34d2d61eaee1d55",
+      "textRange": {
+        "startLine": 23,
+        "endLine": 23,
+        "startOffset": 17,
+        "endOffset": 81
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Immediately return this expression instead of assigning it to the temporary variable \"jws\".",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2019-02-21T00:55:43+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "a3c0e4f7-c6ab-42a7-9705-863476cda40f",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/CowController.java",
+      "project": "vulnado",
+      "line": 6,
+      "hash": "bc6e7fc8628206cf34ff0c11cd830df7",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 7,
+        "endOffset": 27
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'java.io.Serializable'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-15T23:35:10+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "71ddc67b-401c-4390-ba60-eb513db9abf7",
+      "rule": "java:S1118",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Cowsay.java",
+      "project": "vulnado",
+      "line": 6,
+      "hash": "5233d6204d813eb8945cc52707f96689",
+      "textRange": {
+        "startLine": 6,
+        "endLine": 6,
+        "startOffset": 13,
+        "endOffset": 19
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a private constructor to hide the implicit public one.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2019-02-15T23:35:10+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "b2f48ec2-9672-4185-8bec-9e55857a125f",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Cowsay.java",
+      "project": "vulnado",
+      "line": 10,
+      "hash": "4573582866eb0889903f4b1f6780113f",
+      "textRange": {
+        "startLine": 10,
+        "endLine": 10,
+        "startOffset": 4,
+        "endOffset": 14
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-15T23:35:10+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "cac0288c-6bc6-4ab0-b773-015f11252b82",
+      "rule": "java:S1118",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java",
+      "project": "vulnado",
+      "line": 13,
+      "hash": "3f3c5eb1991542c6d4b288085b2aee0d",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 13,
+        "endOffset": 23
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a private constructor to hide the implicit public one.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2019-02-15T00:39:37+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "15aa5046-52a2-4ce5-b29b-d41fdc2dbd78",
+      "rule": "java:S2293",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinkLister.java",
+      "project": "vulnado",
+      "line": 15,
+      "hash": "6b0a5779851270238c3c75c2075841fb",
+      "textRange": {
+        "startLine": 15,
+        "endLine": 15,
+        "startOffset": 39,
+        "endOffset": 47
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace the type specification in this constructor call with the diamond operator (\"<>\").",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "clumsy"
+      ],
+      "creationDate": "2019-02-15T00:39:37+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "773ccb90-c079-42da-8df8-fb4b7048e5a5",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinksController.java",
+      "project": "vulnado",
+      "line": 3,
+      "hash": "b90cb27df285344b69c3010b093c31a7",
+      "textRange": {
+        "startLine": 3,
+        "endLine": 3,
+        "startOffset": 7,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'org.springframework.boot'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-15T00:39:37+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "3e75fba3-d2fd-4f2e-8d20-1aedc44507e4",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinksController.java",
+      "project": "vulnado",
+      "line": 4,
+      "hash": "fc75c65da35d181b54552c1d6ac5a107",
+      "textRange": {
+        "startLine": 4,
+        "endLine": 4,
+        "startOffset": 7,
+        "endOffset": 42
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'org.springframework.http.HttpStatus'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-15T00:39:37+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "2b9b4449-1255-4d11-acd1-235ed773c95b",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LinksController.java",
+      "project": "vulnado",
+      "line": 8,
+      "hash": "bc6e7fc8628206cf34ff0c11cd830df7",
+      "textRange": {
+        "startLine": 8,
+        "endLine": 8,
+        "startOffset": 7,
+        "endOffset": 27
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'java.io.Serializable'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-15T00:39:37+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "4f1b2bf9-bee3-40ee-87a6-074e71a132f7",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 33,
+      "hash": "215368da46868810dda50d0846952a98",
+      "textRange": {
+        "startLine": 33,
+        "endLine": 33,
+        "startOffset": 12,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-14T22:39:25+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "79f0c6f5-07bf-4342-891f-0f2bd04c9d03",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 35,
+      "hash": "83b89583dad76d7534ab998c9c2e6829",
+      "textRange": {
+        "startLine": 35,
+        "endLine": 35,
+        "startOffset": 29,
+        "endOffset": 48
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-14T22:39:25+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "96ba1920-0cea-4539-ad8e-6cad976f7770",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 56,
+      "hash": "5ea703a73a66847440ae47795de6b1e3",
+      "textRange": {
+        "startLine": 56,
+        "endLine": 56,
+        "startOffset": 12,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-14T22:39:25+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "f2aac770-2814-4e14-a69c-37032dfad98f",
+      "rule": "java:S1128",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+      "project": "vulnado",
+      "line": 3,
+      "hash": "b90cb27df285344b69c3010b093c31a7",
+      "textRange": {
+        "startLine": 3,
+        "endLine": 3,
+        "startOffset": 7,
+        "endOffset": 33
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this unused import 'org.springframework.boot'.",
+      "effort": "1min",
+      "debt": "1min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "unused"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "aad1dd7d-ed8c-4023-8eeb-7350c35068a8",
+      "rule": "java:S4488",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+      "project": "vulnado",
+      "line": 18,
+      "hash": "02f51b1844d0d4a2d9a7fc2508f09b65",
+      "textRange": {
+        "startLine": 18,
+        "endLine": 18,
+        "startOffset": 3,
+        "endOffset": 17
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+              "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 45,
+                "endOffset": 63
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Replace \"@RequestMapping(method = RequestMethod.POST)\" with \"@PostMapping\"",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "spring"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "8e57f160-68d6-46e6-874a-817a2d559a8f",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+      "project": "vulnado",
+      "line": 30,
+      "hash": "d84a5868cc1cab603831f3757b936e18",
+      "textRange": {
+        "startLine": 30,
+        "endLine": 30,
+        "startOffset": 16,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make username a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "0e08cbec-51a9-4727-98c6-ccb2a37a089a",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/LoginController.java",
+      "project": "vulnado",
+      "line": 31,
+      "hash": "0446fa69f560c33bcb5f21bc6dcfb254",
+      "textRange": {
+        "startLine": 31,
+        "endLine": 31,
+        "startOffset": 16,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make password a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "87a63f16-c18d-4c22-b46a-43aeefd816a5",
+      "rule": "java:S1118",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 12,
+      "hash": "4a02b72cfb5b109794d71d02aa14ab07",
+      "textRange": {
+        "startLine": 12,
+        "endLine": 12,
+        "startOffset": 13,
+        "endOffset": 21
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add a private constructor to hide the implicit public one.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "design"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "98040e8e-024e-45f0-8481-ba3c282fe5fd",
+      "rule": "java:S4925",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 16,
+      "hash": "d2d74b4018984cfde4c53a8785d32c9e",
+      "textRange": {
+        "startLine": 16,
+        "endLine": 16,
+        "startOffset": 18,
+        "endOffset": 25
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this \"Class.forName()\", it is useless.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "obsolete"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "CLEAR",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "71689ff8-1663-4837-9670-28167ee9c20a",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 26,
+      "hash": "b22535c448ceb223a4b4505defd6d498",
+      "textRange": {
+        "startLine": 26,
+        "endLine": 26,
+        "startOffset": 12,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.err by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "83ee332c-4482-4b41-a1db-243e4bbedf00",
+      "rule": "java:S1643",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 79,
+      "hash": "7215479ca5f50b9fba140545693e5600",
+      "textRange": {
+        "startLine": 79,
+        "endLine": 79,
+        "startOffset": 16,
+        "endOffset": 24
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use a StringBuilder instead.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "performance"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "EFFICIENT",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "32ee277f-dbef-4923-b05d-d25566303527",
+      "rule": "java:S112",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/Postgres.java",
+      "project": "vulnado",
+      "line": 86,
+      "hash": "fdda924e16c6c8cb6afc035461946766",
+      "textRange": {
+        "startLine": 86,
+        "endLine": 86,
+        "startOffset": 22,
+        "endOffset": 38
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Define and throw a dedicated exception instead of using a generic one.",
+      "effort": "20min",
+      "debt": "20min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "error-handling",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "0a9b50cd-b799-420c-8492-d84f89241528",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 13,
+      "hash": "8b574ef608304415fe3c56dd8fbaf955",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 30,
+        "endOffset": 44
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make hashedPassword a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "65aab2b7-f9da-4c18-8aae-e893cf5e642e",
+      "rule": "java:S1659",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 13,
+      "hash": "8b574ef608304415fe3c56dd8fbaf955",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 20,
+        "endOffset": 28
+      },
+      "flows": [
+        {
+          "locations": [
+            {
+              "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+              "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 30,
+                "endOffset": 44
+              },
+              "msgFormattings": []
+            }
+          ]
+        }
+      ],
+      "status": "OPEN",
+      "message": "Declare \"username\" and all following declarations on a separate line.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": true,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "FORMATTED",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "6f86d878-9295-4167-b4dd-eacefbf557e7",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 13,
+      "hash": "8b574ef608304415fe3c56dd8fbaf955",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 20,
+        "endOffset": 28
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make username a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "b5eb850f-90c3-4fc7-b41a-2579e9bf60ee",
+      "rule": "java:S1104",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 13,
+      "hash": "8b574ef608304415fe3c56dd8fbaf955",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 16,
+        "endOffset": 18
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Make id a static final constant or non-public and provide accessors if needed.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "a4c7b74f-35ab-4be8-808d-e0351b788472",
+      "rule": "java:S2095",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 44,
+      "hash": "0f32df575fcb57f84addecea2f417f40",
+      "textRange": {
+        "startLine": 44,
+        "endLine": 44,
+        "startOffset": 13,
+        "endOffset": 34
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Use try-with-resources or close this \"Statement\" in a \"finally\" clause.",
+      "effort": "5min",
+      "debt": "5min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "symbolic-execution",
+        "leak",
+        "denial-of-service",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "COMPLETE",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "55b143a0-04d4-4754-8229-cca82e7041d1",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 45,
+      "hash": "c26c2025455e6afef408d38f1d6a682a",
+      "textRange": {
+        "startLine": 45,
+        "endLine": 45,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "3107a804-bb74-4340-a6e4-d0f8820d87f4",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 48,
+      "hash": "6d07b05a03cca0b3f35cb75e0932c762",
+      "textRange": {
+        "startLine": 48,
+        "endLine": 48,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.out by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "59f7c7ef-2fbd-41a4-97ef-4946901fc005",
+      "rule": "java:S117",
+      "severity": "MINOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 51,
+      "hash": "898d58846296a6b62bf24fb8d53790ba",
+      "textRange": {
+        "startLine": 51,
+        "endLine": 51,
+        "startOffset": 15,
+        "endOffset": 22
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Rename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.",
+      "effort": "2min",
+      "debt": "2min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "convention"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "IDENTIFIABLE",
+      "cleanCodeAttributeCategory": "CONSISTENT",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "LOW"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "a6a29d10-4e91-45dc-82a0-cd638c1b3758",
+      "rule": "java:S106",
+      "severity": "MAJOR",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 59,
+      "hash": "b22535c448ceb223a4b4505defd6d498",
+      "textRange": {
+        "startLine": 59,
+        "endLine": 59,
+        "startOffset": 6,
+        "endOffset": 16
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Replace this use of System.err by a logger.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "bad-practice",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "MODULAR",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "MEDIUM"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "de327e87-aba9-45d0-b5ff-d36cf7bba300",
+      "rule": "java:S1143",
+      "severity": "CRITICAL",
+      "component": "vulnado:src/main/java/com/scalesec/vulnado/User.java",
+      "project": "vulnado",
+      "line": 61,
+      "hash": "1aba5703084f105a1cf02655aede82c9",
+      "textRange": {
+        "startLine": 61,
+        "endLine": 61,
+        "startOffset": 6,
+        "endOffset": 12
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Remove this return statement from this finally block.",
+      "effort": "30min",
+      "debt": "30min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "cwe",
+        "error-handling",
+        "cert"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "BUG",
+      "scope": "MAIN",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "LOGICAL",
+      "cleanCodeAttributeCategory": "INTENTIONAL",
+      "impacts": [
+        {
+          "softwareQuality": "RELIABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    },
+    {
+      "key": "cf49e85f-9d30-4b07-8fa3-45f894231e8e",
+      "rule": "java:S2699",
+      "severity": "BLOCKER",
+      "component": "vulnado:src/test/java/com/scalesec/vulnado/VulnadoApplicationTests.java",
+      "project": "vulnado",
+      "line": 13,
+      "hash": "4f3a6b567cda13dd6baeb45860ba2010",
+      "textRange": {
+        "startLine": 13,
+        "endLine": 13,
+        "startOffset": 13,
+        "endOffset": 25
+      },
+      "flows": [],
+      "status": "OPEN",
+      "message": "Add at least one assertion to this test case.",
+      "effort": "10min",
+      "debt": "10min",
+      "author": "ryan@scalesec.com",
+      "tags": [
+        "junit",
+        "tests"
+      ],
+      "creationDate": "2019-02-13T01:41:17+0000",
+      "updateDate": "2024-05-30T15:47:47+0000",
+      "type": "CODE_SMELL",
+      "scope": "TEST",
+      "quickFixAvailable": false,
+      "messageFormattings": [],
+      "codeVariants": [],
+      "cleanCodeAttribute": "TESTED",
+      "cleanCodeAttributeCategory": "ADAPTABLE",
+      "impacts": [
+        {
+          "softwareQuality": "MAINTAINABILITY",
+          "severity": "HIGH"
+        }
+      ],
+      "issueStatus": "OPEN"
+    }
+  ]
+}

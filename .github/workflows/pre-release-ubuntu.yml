@@ -18,7 +18,7 @@ jobs:
 
       - run: "./scripts/setup.sh"
       - run: "./scripts/test-cicd.sh"
-      - run: "./scripts/generate_exe.sh"
+      - run: "./scripts/generate-exe.sh"
       - run: "ls dist/"
 
       - uses: "marvinpinto/action-automatic-releases@latest"
