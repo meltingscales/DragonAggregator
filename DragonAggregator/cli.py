@@ -59,7 +59,9 @@ class CLIController:
             connector = SonarQubeConnector(
                 uri=self.args.uri,
                 api_key=self.config['sonarqube']['api_key'],
-                app_identifier=self.args.app_identifier
+                app_identifier=self.args.app_identifier,
+                mock_api=self.config['sonarqube']['mock_api'],
+                mock_api_json_path=self.config['sonarqube']['mock_api_json_path'],
             )
             parsed = connector.pull_and_parse_data()
             self.db.save_all_vulnerabilities(parsed)

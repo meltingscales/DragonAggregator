@@ -33,6 +33,7 @@ class VeracodeConnector(GenericConnector):
     def pull_raw_vulnerability_data(self):
 
         if self.mock_api:
+            print("Veracode: Using mock API data")
             with open(self.mock_api_json_path, 'r') as fh:
                 return json.load(fh)
 

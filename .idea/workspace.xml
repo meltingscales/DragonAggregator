@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="80401507-aa3c-4745-aed9-c3e9587d9af2" name="Changes" comment="" />
+    <list default="true" id="80401507-aa3c-4745-aed9-c3e9587d9af2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/scripts/extract_sonarqube_from_json.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.dragonaggregator.example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.dragonaggregator.example.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DragonAggregator/connector/Sonarqube.py" beforeDir="false" afterPath="$PROJECT_DIR$/DragonAggregator/connector/Sonarqube.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/test-cicd.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/test-cicd.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,32 +37,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for testGitleaks.TestGitLeaks.executor&quot;: &quot;Run&quot;,
-    &quot;Python tests.Python tests for testSonarqube.TestSonarqube.testSimple.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/henry/.bashrc&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.stylelint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.stylelint&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "Python tests.Python tests for testGitleaks.TestGitLeaks.executor": "Run",
+    "Python tests.Python tests for testSonarqube.TestSonarqube.testSimple.executor": "Run",
+    "Python.extract_sonarqube_from_json.executor": "Debug",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "release",
+    "last_opened_file_path": "/home/henry/.bashrc",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.stylelint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.stylelint": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "actions.on.save",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "TEXT"
     ]
   }
-}</component>
-  <component name="RunManager" selected="Python tests.Python tests for testGitleaks.TestGitLeaks">
+}]]></component>
+  <component name="RunManager" selected="Python.pull sonarqube">
+    <configuration name="extract_sonarqube_from_json" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="DragonAggregator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scripts/extract_sonarqube_from_json.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pull sonarqube" type="PythonConfigurationType" factoryName="Python">
+      <module name="DragonAggregator" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="SDK_NAME" value="Poetry (DragonAggregator)" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="DragonAggregator" />
+      <option name="PARAMETERS" value="--pull  --scanner SONARQUBE  --scan_type SAST --app_identifier vulnado" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="true" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="pull veracode" type="PythonConfigurationType" factoryName="Python">
       <module name="DragonAggregator" />
       <option name="ENV_FILES" value="" />
@@ -131,11 +185,14 @@
     <list>
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Python.pull veracode" />
+      <item itemvalue="Python.pull sonarqube" />
+      <item itemvalue="Python.extract_sonarqube_from_json" />
       <item itemvalue="Python tests.Python tests for testGitleaks.TestGitLeaks" />
       <item itemvalue="Python tests.Python tests for testSonarqube.TestSonarqube.testSimple" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.extract_sonarqube_from_json" />
         <item itemvalue="Python tests.Python tests for testSonarqube.TestSonarqube.testSimple" />
         <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Python tests.Python tests for testGitleaks.TestGitLeaks" />
@@ -163,7 +220,7 @@
       <workItem from="1716919335859" duration="3380000" />
       <workItem from="1717082909984" duration="1961000" />
       <workItem from="1717092190500" duration="1946000" />
-      <workItem from="1717165975772" duration="1534000" />
+      <workItem from="1717165975772" duration="2165000" />
     </task>
     <servers />
   </component>
@@ -177,6 +234,11 @@
           <url>file://$PROJECT_DIR$/DragonAggregator/test/testSonarqube.py</url>
           <line>30</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/scripts/extract_sonarqube_from_json.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
