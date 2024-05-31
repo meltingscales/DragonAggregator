@@ -5,17 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80401507-aa3c-4745-aed9-c3e9587d9af2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DragonAggregator/connector/Veracode.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DragonAggregator/enum/ScanTool.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DragonAggregator/enum/ScanType.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/sample-api/veracode/juiceshop.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dragonaggregator.example.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/.dragonaggregator.example.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.github/workflows/pre-release-ubuntu.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dragonaggregator.spec" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/generate-exe.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/setup.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DragonAggregator/cli.py" beforeDir="false" afterPath="$PROJECT_DIR$/DragonAggregator/cli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DragonAggregator/connector/Gitleaks.py" beforeDir="false" afterPath="$PROJECT_DIR$/DragonAggregator/connector/Gitleaks.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DragonAggregator/connector/Sonarqube.py" beforeDir="false" afterPath="$PROJECT_DIR$/DragonAggregator/connector/Sonarqube.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DragonAggregator/test/testSonarqube.py" beforeDir="false" afterPath="$PROJECT_DIR$/DragonAggregator/test/testSonarqube.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +65,7 @@
     ]
   }
 }</component>
-  <component name="RunManager" selected="Python.pull veracode">
+  <component name="RunManager" selected="Python tests.Python tests for testGitleaks.TestGitLeaks">
     <configuration name="pull veracode" type="PythonConfigurationType" factoryName="Python">
       <module name="DragonAggregator" />
       <option name="ENV_FILES" value="" />
@@ -175,6 +172,7 @@
       <workItem from="1716919335859" duration="3380000" />
       <workItem from="1717082909984" duration="1961000" />
       <workItem from="1717092190500" duration="1946000" />
+      <workItem from="1717165975772" duration="1208000" />
     </task>
     <servers />
   </component>

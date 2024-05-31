@@ -15,9 +15,10 @@ class TestGitLeaks(unittest.TestCase):
             os.remove("test-gitleaks.sqlite3")
 
     def test_parse_gitleaks(self):
-        filepath = "../../data/sample-api/gitleaks/juiceshop.json"
+        filepath = "data/sample-api/gitleaks/juiceshop.json"
+        filepath = os.path.abspath(filepath)
 
-        gc = GitleaksConnector(filepath)
+        gc = GitleaksConnector(uri=filepath)
 
         data = gc.pull_raw_vulnerability_data()
 
